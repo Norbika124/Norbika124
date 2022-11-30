@@ -28,3 +28,10 @@ body {
     background-color: #04AA6D;
     color: white;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(89, 19, 140);
+    color: rgb(244, 218, 255);
+}
