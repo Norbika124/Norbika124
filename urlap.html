@@ -19,10 +19,29 @@
     </div>
     <h1>AUTÓ KÖLCSÖNZÉS</h1>
     <form action="">
-        <legend>
+        <fieldset>
+            <legend>Személyes adatok</legend>
             <label for="NÉV">ADJA MEG A NEVÉT: </label>
             <input type="text" name="NÉV" id="NÉV" placeholder="NÉV">
-        </legend>
+            <label for="SZIG">ADJA MEG A SZEMÉLYIGAZOLVÁNY SZÁMÁT: </label>
+            <input type="text" name="NÉV" id="SZIG"placeholder="SZÁM">           
+        </fieldset>
+        <fieldset>
+            <legend>Autó választék</legend>
+            <label for="auto">Évjárat:</label>
+            <select name="auto" id="ev">
+                <option value="1983">1983</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="2000">2000</option>
+            </select>
+            <label for="szin">Milyen színű legyen?</label>
+            <input type="color" name="szin" id="szin">
+            <label for="gyors">Milyen gyors legyen?</label>
+            <input type="range" name="gyors" id="gyors">
+        </fieldset>
+        <input type="reset" value="reset">
+        <input type="submit" value="OK">
     </form>
 </body>
 </html>
