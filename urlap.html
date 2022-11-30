@@ -35,15 +35,20 @@
                 <option value="1983">1983</option>
                 <option value="1990">1990</option>
                 <option value="1991">1991</option>
-                <option value="2000">2000</option>
+                <option value="2000" default>2000</option>
             </select><br>
             <label for="szin">Milyen színű legyen?</label>
             <input type="color" name="szin" id="szin"><br>
             <label for="gyors">Milyen gyors legyen?</label>
             <input type="range" name="gyors" id="gyors"><br>
         </fieldset><br>
-        <input type="reset" value="reset">
-        <input type="submit" value="OK">
+        <fieldset>
+            <label for="el">Elfogadja a felhasználási feltételeket?</label>
+            <input type="checkbox" name="el" id="el" checked> <br>
+            <input type="reset" value="reset">
+            <input type="submit" value="OK">
+        </fieldset>
+
     </form>
 </body>
 
