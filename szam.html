@@ -1,2 +1,55 @@
-# web
-Config files for my GitHub profile.
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számologép</title>
+    <style>
+        fieldset{
+            background-color: aqua;
+        }
+        legend{
+            color: blueviolet;
+            background-color: chartreuse;
+            bolder: 2px solid black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: crimson;
+        }
+    </style>
+</head>
+<body>
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Számol</legend>
+            <br>
+            <input type="number" name="sz" id="a" placeholder="szám1">
+            <input type="number" name="sz" id="b" placeholder="szám2">
+            <input type="text" name="sz" id="c" placeholder="eredmény" readonly>
+            <br>b<br>
+            <input type="submit" value="+" onclick="ad()">
+            <input type="submit" value="-" onclick="kiv()">
+            <input type="submit" value="*" onclick="ossz()">
+            <input type="submit" value="/" onclick="oszt()">
+            <input type="reset" value="törlés">
+                </fieldset>
+    </form>
+
+    <script>
+        function ad() {
+            c.value = Number(a.value) + Number(b.value)
+        }
+        function kiv() {
+            c.value = Number(a.value) - Number(b.value)
+        }
+        function ossz() {
+        c.value = Number(a.value) * Number(b.value)
+        }
+        function oszt() {
+            c.value = Number(a.value) / Number(b.value)
+        }
+
+    </script>
+    
+</body>
+</html>
